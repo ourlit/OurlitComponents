@@ -1,0 +1,22 @@
+.typography {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#title {
+    font-size: 52px;
+}
+
+#subtitle {
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+#header {
+    font-size: 28px;
+}
+
+#text {
+    font-size: 16px;
+    opacity: 0.8;
+}

@@ -7,3 +7,8 @@ export type OurlitButtonProps = {
     variant?: 'text' | 'contained' | 'outlined';
     onClick?: () => void;
 };
+
+export type TypographyProps = {
+    text: string;
+    color?: 'primaryBlue' | 'primaryRed' | 'black' | 'white';
+};
