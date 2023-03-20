@@ -1,3 +1,5 @@
+import React from 'react';
+
 export type OurlitButtonSizes = 'small' | 'medium' | 'large';
 
 export type OurlitButtonProps = {
@@ -11,4 +13,19 @@ export type OurlitButtonProps = {
 export type TypographyProps = {
     text: string;
     color?: 'primaryBlue' | 'primaryRed' | 'black' | 'white';
+};
+
+export type ModalFadeProps = {
+    children: React.ReactElement;
+    in?: boolean;
+    onClick?: any;
+    onEnter?: (node: HTMLElement, isAppearing: boolean) => void;
+    onExited?: (node: HTMLElement, isAppearing: boolean) => void;
+    ownerState?: any;
+};
+
+export type OurlitModalProps = {
+    controller: React.ReactElement;
+    initialOpenState: boolean;
+    children: React.ReactElement;
 };

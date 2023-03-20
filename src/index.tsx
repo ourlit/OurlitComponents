@@ -1,4 +1,4 @@
-import { OurlitButton, OurlitSubtitle, OurlitTitle, OurlitHeader, OurlitText } from './components';
+import { OurlitButton, OurlitSubtitle, OurlitTitle, OurlitHeader, OurlitText, OurlitModal } from './components';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -14,6 +14,13 @@ const App = () => (
       <OurlitSubtitle text="Sam" color="primaryRed" />
       <OurlitHeader text="Sam" color="primaryBlue" />
       <OurlitText text="Sam" color="primaryBlue" />
+      <OurlitModal
+        text="Open"
+        color="primaryRed"
+        size="medium"
+        variant="outlined"
+        content={<OurlitTitle text="Sam" color="primaryRed" />}
+      />
     </>
 );
 

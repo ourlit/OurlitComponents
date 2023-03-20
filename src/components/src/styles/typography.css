@@ -1,6 +1,9 @@
 .typography {
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    
+    /* min-width: 100px;
+    min-height: 20px; */
 }
 
 #title {
