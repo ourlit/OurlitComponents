@@ -19,9 +19,24 @@ const App = () => (
         color="primaryRed"
         size="medium"
         variant="outlined"
-        content={<OurlitTitle text="Sam" color="primaryRed" />}
+        content={
+          <>
+            <OurlitTitle text="Sam" color="primaryRed" />
+            <OurlitModal
+              text="Open"
+              color="primaryRed"
+              size="medium"
+              variant="outlined"
+              content={
+                <>
+                  <OurlitText text="Sam" color="primaryBlue" />
+                </>
+              }
+            />
+        </>
+        }
       />
-    </>
+      </>
 );
 
 ReactDOM.render(
