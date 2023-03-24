@@ -24,8 +24,7 @@ export type ModalFadeProps = {
     ownerState?: any;
 };
 
-export type OurlitModalProps = {
-    controller: React.ReactElement;
-    initialOpenState: boolean;
-    children: React.ReactElement;
+export type OurlitModalProps = OurlitButtonProps &{
+    modalSize?: 'small' | 'medium' | 'large';
+    content: React.ReactElement;
 };

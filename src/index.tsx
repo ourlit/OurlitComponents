@@ -19,6 +19,7 @@ const App = () => (
         color="primaryRed"
         size="medium"
         variant="outlined"
+        modalSize="large"
         content={
           <>
             <OurlitTitle text="Sam" color="primaryRed" />
@@ -27,9 +28,22 @@ const App = () => (
               color="primaryRed"
               size="medium"
               variant="outlined"
+              modalSize="medium"
               content={
                 <>
                   <OurlitText text="Sam" color="primaryBlue" />
+                  <OurlitModal
+                    text="Open"
+                    color="primaryRed"
+                    size="medium"
+                    variant="outlined"
+                    modalSize="small"
+                    content={
+                      <>
+                        <OurlitText text="Sam" color="primaryBlue" />
+                      </>
+                    }
+                  />
                 </>
               }
             />
