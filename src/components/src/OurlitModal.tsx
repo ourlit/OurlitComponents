@@ -65,8 +65,6 @@ const OurlitModal = ({ text, color, size, variant, modalSize, content }: OurlitM
     }
   })();
 
-  console.log('modalSize', modalSize, 'modalWidth: ', modalWidth);
-
   const boxStyle = {
     position: 'absolute' as 'absolute',
     top: '50%',
