@@ -6,7 +6,6 @@ import { colors } from './colors';
 import { OurlitButtonProps } from './types/types';
 
 const OurlitButton = ({ text, color, size, variant, onClick }: OurlitButtonProps) => {
-    console.log('ourlit text', text);
 
     // resolve variant of the button
     const buttonVariant = variant ? variant : 'contained';
