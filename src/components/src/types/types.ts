@@ -28,3 +28,13 @@ export type OurlitModalProps = OurlitButtonProps &{
     modalSize?: 'small' | 'medium' | 'large';
     content: React.ReactElement;
 };
+
+export type OurlitIconProps = {
+    size?: 'small' | 'medium' | 'large' | string;
+    type: (
+        'home' | 'menu' | 'search' | 'account' | 'settings' | 'add' |
+        'edit' | 'delete' | 'check' | 'close' | 'refresh' | 'star' | 
+        'notifications'
+    );
+};
+

@@ -1,4 +1,4 @@
-import { OurlitButton, OurlitSubtitle, OurlitTitle, OurlitHeader, OurlitText, OurlitModal } from './components';
+import { OurlitButton, OurlitSubtitle, OurlitTitle, OurlitHeader, OurlitText, OurlitModal, OurlitIcon } from './components';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -14,43 +14,8 @@ const App = () => (
       <OurlitSubtitle text="Sam" color="primaryRed" />
       <OurlitHeader text="Sam" color="primaryBlue" />
       <OurlitText text="Sam" color="primaryBlue" />
-      <OurlitModal
-        text="Open"
-        color="primaryRed"
-        size="medium"
-        variant="outlined"
-        modalSize="large"
-        content={
-          <>
-            <OurlitTitle text="Sam" color="primaryRed" />
-            <OurlitModal
-              text="Open"
-              color="primaryRed"
-              size="medium"
-              variant="outlined"
-              modalSize="medium"
-              content={
-                <>
-                  <OurlitText text="Sam" color="primaryBlue" />
-                  <OurlitModal
-                    text="Open"
-                    color="primaryRed"
-                    size="medium"
-                    variant="outlined"
-                    modalSize="small"
-                    content={
-                      <>
-                        <OurlitText text="Sam" color="primaryBlue" />
-                      </>
-                    }
-                  />
-                </>
-              }
-            />
-        </>
-        }
-      />
-      </>
+      <OurlitIcon size="100" type="account" />
+    </>
 );
 
 ReactDOM.render(
