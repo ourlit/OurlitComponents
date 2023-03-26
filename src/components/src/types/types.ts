@@ -38,3 +38,12 @@ export type OurlitIconProps = {
     );
 };
 
+export type StackProps = {
+    spacing?: number;
+    justifyContent?: 'flex-start' | 'center' | 'flex-end' | 'space-between' | 'space-around' | 'space-evenly';
+    alignItems?: 'flex-start' | 'center' | 'flex-end' | 'stretch' | 'baseline';
+    divider?: boolean;
+    style?: React.CSSProperties;
+    children: React.ReactElement | React.ReactElement[];
+};
+

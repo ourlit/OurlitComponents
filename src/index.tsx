@@ -1,4 +1,4 @@
-import { OurlitButton, OurlitSubtitle, OurlitTitle, OurlitHeader, OurlitText, OurlitModal, OurlitIcon } from './components';
+import { OurlitButton, OurlitSubtitle, OurlitTitle, OurlitHeader, OurlitText, OurlitModal, OurlitIcon, VerticalStack, HorizontalStack } from './components';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -10,11 +10,15 @@ const App = () => (
         size="medium"
         variant="contained"
       />
-      <OurlitTitle text="Sam" color="primaryRed" />
-      <OurlitSubtitle text="Sam" color="primaryRed" />
-      <OurlitHeader text="Sam" color="primaryBlue" />
-      <OurlitText text="Sam" color="primaryBlue" />
-      <OurlitIcon size="100" type="account" />
+      <VerticalStack style={{ width: 1000 }}>
+        <OurlitTitle text="Sam" color="primaryRed" />
+        <OurlitSubtitle text="Sam" color="primaryRed" />
+        <HorizontalStack>
+          <OurlitHeader text="Sam" color="primaryBlue" />
+          <OurlitText text="Sam" color="primaryBlue" />
+          <OurlitIcon size="100" type="account" />
+        </HorizontalStack>
+      </VerticalStack>
     </>
 );
 

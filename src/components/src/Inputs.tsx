@@ -1,0 +1,1 @@
+const Sam = () => <div />;
