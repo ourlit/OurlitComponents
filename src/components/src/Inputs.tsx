@@ -1,20 +1,10 @@
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import OurlitIcon from './OurlitIcon';
+import { TextInputProps } from './types/types';
 
 import './styles/inputs.css';
 
-type TextInputProps = {
-    label?: string;
-    value?: string;
-    variant?: 'standard' | 'filled' | 'outlined';
-    onChange?: (event: string) => void;
-    style?: React.CSSProperties;
-    rows?: number;
-    error?: boolean;
-    helperText?: string;
-    multiline?: boolean;
-};
 
 export const OurlitTextInput = ({
     label, value, variant, onChange, style,

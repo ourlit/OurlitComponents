@@ -4,6 +4,7 @@ import OurlitModal from './src/OurlitModal';
 import OurlitIcon from './src/OurlitIcon';
 import { VerticalStack, HorizontalStack } from './src/Stack';
 import { OurlitTextInput, OurlitMessageInput } from './src/Inputs';
+import OurlitImageContainer from './src/ImageContainer';
 
 export {
     OurlitButton,
@@ -17,4 +18,5 @@ export {
     HorizontalStack,
     OurlitTextInput,
     OurlitMessageInput,
+    OurlitImageContainer,
 };

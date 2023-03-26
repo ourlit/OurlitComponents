@@ -9,6 +9,7 @@ import {
   OurlitMessageInput,
   HorizontalStack,
   VerticalStack,
+  OurlitImageContainer
 } from './components';
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
@@ -51,6 +52,11 @@ const App = () => {
         value={text}
         onChange={setTextHelper}
         variant="outlined"
+      />
+      <OurlitImageContainer
+        src="https://hips.hearstapps.com/hmg-prod/images/mathieu-van-der-poel-01-2021-benicasim-2-1638218017.jpeg?crop=1.00xw:0.751xh;0,0.224xh&resize=1200:*"
+        alt="Mathieu van der Poel"
+        width="100px"
       />
     </>
 );

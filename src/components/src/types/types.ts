@@ -47,3 +47,22 @@ export type StackProps = {
     children: React.ReactElement | React.ReactElement[];
 };
 
+export type TextInputProps = {
+    label?: string;
+    value?: string;
+    variant?: 'standard' | 'filled' | 'outlined';
+    onChange?: (event: string) => void;
+    style?: React.CSSProperties;
+    rows?: number;
+    error?: boolean;
+    helperText?: string;
+    multiline?: boolean;
+};
+
+export type ImageContainerProps = {
+    src: string;
+    alt?: string;
+    width?: string;
+    height?: string;
+    borderRadius?: string;
+};
