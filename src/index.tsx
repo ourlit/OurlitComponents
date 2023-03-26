@@ -1,8 +1,28 @@
-import { OurlitButton, OurlitSubtitle, OurlitTitle, OurlitHeader, OurlitText, OurlitModal, OurlitIcon, VerticalStack, HorizontalStack } from './components';
-import React from 'react';
+import {
+  OurlitButton,
+  OurlitHeader,
+  OurlitIcon,
+  OurlitSubtitle,
+  OurlitText,
+  OurlitTitle,
+  OurlitTextInput,
+  OurlitMessageInput,
+  HorizontalStack,
+  VerticalStack,
+} from './components';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
-const App = () => (
+const App = () => {
+
+  const [text, setText] = useState('');
+
+  const setTextHelper = (newText: string) => {
+    console.log('here', newText);
+    setText(newText);
+  };
+
+  return (
     <>
       <OurlitButton
         text="Sam"
@@ -19,8 +39,22 @@ const App = () => (
           <OurlitIcon size="100" type="account" />
         </HorizontalStack>
       </VerticalStack>
+      {/* <OurlitTextInput
+        label=""
+        value=""
+        variant="outlined"
+        error
+        helperText="Wrong!"
+      /> */}
+      <OurlitMessageInput
+        label=""
+        value={text}
+        onChange={setTextHelper}
+        variant="outlined"
+      />
     </>
 );
+    };
 
 ReactDOM.render(
   <React.StrictMode>

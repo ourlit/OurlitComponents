@@ -34,7 +34,7 @@ export type OurlitIconProps = {
     type: (
         'home' | 'menu' | 'search' | 'account' | 'settings' | 'add' |
         'edit' | 'delete' | 'check' | 'close' | 'refresh' | 'star' | 
-        'notifications'
+        'notifications' | 'send'
     );
 };
 

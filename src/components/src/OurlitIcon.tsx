@@ -12,6 +12,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import RefreshIcon from '@mui/icons-material/Refresh';
 import StarIcon from '@mui/icons-material/Star';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import SendIcon from '@mui/icons-material/Send';
 
 import { OurlitIconProps } from './types/types';
 
@@ -60,6 +61,8 @@ const OurlitIcon = ({ size, type }: OurlitIconProps) => {
                 return <StarIcon />;
             case 'notifications':
                 return <NotificationsIcon />;
+            case 'send':
+                return <SendIcon />;
             default:
                 return <HomeIcon />;
         }
