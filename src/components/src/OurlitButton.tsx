@@ -1,6 +1,5 @@
 import React from 'react';
-import { styled } from '@mui/material/styles';
-import Button, { ButtonProps } from '@mui/material/Button';
+import Button from '@mui/material/Button';
 
 import { colors } from './colors';
 import { OurlitButtonProps } from './types/types';
@@ -48,21 +47,28 @@ const OurlitButton = ({ text, color, size, variant, onClick }: OurlitButtonProps
       }
     })();
 
-    const StyledButton = styled(Button)<ButtonProps>(() => ({
-      width: buttonWidth,
-      height: buttonHeight,
-      color: textColor,
-      backgroundColor,
-      borderColor
-    }));
+    // const StyledButton = styled(Button)<ButtonProps>(() => ({
+    //   width: buttonWidth,
+    //   height: buttonHeight,
+    //   color: textColor,
+    //   backgroundColor,
+    //   borderColor
+    // }));
 
     return (
-      <StyledButton
+      <Button
+        sx={{
+          width: buttonWidth,
+          height: buttonHeight,
+          color: textColor,
+          backgroundColor,
+          borderColor
+        }}
         variant={variant}
         onClick={onClick}
       >
         {text}
-      </StyledButton>
+      </Button>
     );
 };
 

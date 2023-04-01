@@ -7,16 +7,16 @@ import { OurlitTextInput, OurlitMessageInput } from './src/Inputs';
 import OurlitImageContainer from './src/ImageContainer';
 
 export {
-    OurlitButton,
-    OurlitTitle,
-    OurlitSubtitle,
-    OurlitHeader,
-    OurlitText,
-    OurlitModal,
-    OurlitIcon,
-    VerticalStack,
-    HorizontalStack,
-    OurlitTextInput,
-    OurlitMessageInput,
-    OurlitImageContainer,
+  OurlitButton,
+  OurlitTitle,
+  OurlitSubtitle,
+  OurlitHeader,
+  OurlitText,
+  OurlitModal,
+  OurlitIcon,
+  VerticalStack,
+  HorizontalStack,
+  OurlitTextInput,
+  OurlitMessageInput,
+  OurlitImageContainer
 };
